@@ -76,12 +76,14 @@ export default function Reservation() {
   return (
     <div className="flex flex-col justify-center items-center p-4">
       <div className="flex justify-between items-center w-full px-4">
-        <Button variant="outline" size="icon" onClick={handleBack}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" dataSlot="icon" className="w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-          </svg>
-          <span className="sr-only">Go back</span>
-        </Button>
+        <div className="p-4">
+          <Button variant="outline" size="icon" onClick={handleBack}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+            <span className="sr-only">Go back</span>
+          </Button>
+        </div>
         <div className="p-4">
           <ModeToggle />
         </div>
